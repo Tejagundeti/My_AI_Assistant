@@ -21,7 +21,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "my-qa-assistant"
 
 # Define resume file path
-RESUME_PATH = "./Teja_Fresher.pdf"  
+RESUME_PATH = "./TejaGundeti_FullStackDeveloper.pdf"  
 
 # App title
 st.markdown("<h1 style='text-align: center;'>Teja's AI Assistant</h1>", unsafe_allow_html=True)
@@ -344,5 +344,7 @@ if st.session_state.thinking and st.session_state.retrieval_chain is not None:
     # Force a rerun to display the updated messages
     st.rerun()
 
-st.markdown("---")
-st.markdown("👨‍💻 Developed with ❤️ using OpenAI, LangChain & Streamlit")
+# Display footer only when chat is empty to prevent duplication
+if not st.session_state.get('messages') or len(st.session_state.messages) == 0:
+    st.markdown("---")
+    st.markdown("👨‍💻 Developed with ❤️ using OpenAI, LangChain & Streamlit")
