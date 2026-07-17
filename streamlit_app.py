@@ -15,7 +15,7 @@ load_dotenv()
 # API keys are loaded from environment variables or a local .env file.
 
 # Define resume file path
-RESUME_PATH = "./TejaGundeti_FullStackDeveloper.pdf"  
+RESUME_PATH = "./GUNDETI_TEJA_RESUME.pdf"
 
 # App title
 st.markdown("<h1 style='text-align: center;'>Teja's AI Assistant</h1>", unsafe_allow_html=True)
