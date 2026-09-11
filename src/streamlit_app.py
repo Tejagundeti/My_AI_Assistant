@@ -126,7 +126,8 @@ ACHIEVEMENTS
         retriever = vectorstore.as_retriever()
 
         # Define LLM using Groq (free & fast)
-        llm = ChatGroq(model="llama3-8b-8192", temperature=0.3)
+        #llm = ChatGroq(model="llama3-8b-8192", temperature=0.3)
+        llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0.3)
 
         # Create the prompt template
         prompt = ChatPromptTemplate.from_template(
