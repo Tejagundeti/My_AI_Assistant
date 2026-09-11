@@ -13,10 +13,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set API keys
-if "GROQ_API_KEY" in st.secrets:
-    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-else:
-    os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
+# Set API key
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
+#if "GROQ_API_KEY" in st.secrets:
+    #os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+#else:
+    #os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
 
 # Define resume file path (always relative to this script's directory)
 RESUME_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "TejaGundeti_Resume.pdf")
