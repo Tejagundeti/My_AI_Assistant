@@ -19,7 +19,7 @@ else:
     os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
 
 # Define resume file path (always relative to this script's directory)
-RESUME_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "GUNDETI_TEJA_RESUME.pdf")
+RESUME_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "TejaGundeti_Resume.pdf")
 
 # App title
 st.markdown("<h1 style='text-align: center;'>Teja's AI Assistant</h1>", unsafe_allow_html=True)
