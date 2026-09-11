@@ -19,4 +19,5 @@ jobs:
           github_repo_id: ${{ github.repository }}
           huggingface_repo_id: tejagundeti/My_AI_Assistant
           hf_token: ${{ secrets.HF_TOKEN }}
-          space_sdk: streamlit
+          space_sdk: docker
+          
